@@ -1,0 +1,812 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff974e;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#services {
+    padding: 40px;
+    background-color: #ffd157;
+}
+
+#services h2 {
+    text-align: center;
+    color: #333;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    color: #ff974e;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+#about, #team, #contact {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #ff974e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#about {
+    background: linear-gradient(135deg, #ff974e 0%, #ffd157 100%);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+#team {
+    background-color: #ffd157;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#team h2 {
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.member {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+
+.member-card {
+    background-color: #ff974e;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.member p {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .member {
+        width: 100%;
+    }
+}
+
+#team {
+    background-color: #ffd157;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#team h2 {
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.member {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.member-card {
+    background-color: #ff974e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.team-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+}
+
+.member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffd157;
+    text-transform: uppercase;
+}
+
+.member p {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .member {
+        width: 100%;
+    }
+}
+#hero {
+    background: linear-gradient(135deg, #ff974e, #ffd157);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: #fff;
+    color: #ff974e;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff974e;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+}
+/* Apply padding to the body for global spacing */
+body {
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Add margin and padding to all sections */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #ff974e, #ffd157);
+    padding: 15px 20px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #fff; /* Reduced border thickness */
+}
+
+header .logo h1 {
+    font-size: 30px; /* Reduced font size */
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px; /* Reduced letter-spacing */
+    margin: 0;
+    border: 1px solid #fff; /* Reduced border thickness */
+    padding: 5px 10px; /* Reduced padding */
+    border-radius: 5px; /* Reduced border-radius */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px; /* Reduced margin */
+}
+
+nav ul li a {
+    font-size: 16px; /* Reduced font size */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px; /* Reduced padding */
+    border-radius: 5px; 
+    border: 1px solid #fff; /* Reduced border thickness */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #ff974e;
+    border-color: #ff974e; /* Border changes to orange on hover */
+}
+
+/* Make the header responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 8px 0; /* Reduced margin */
+    }
+
+    header {
+        flex-direction: column;
+        
+    }
+
+    .logo h1 {
+        margin-bottom: 10px; /* Reduced margin */
+    }
+    .logo{
+        border-radius: 10px;
+    }
+}
+
+.member-card ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    text-align: left; /* Left align the list */
+    color: #666; /* Medium gray color for qualifications */
+    font-size: 16px; /* Font size for qualifications list items */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+.member-card ul li {
+    margin: 10px 0; /* Margin for list items */
+    position: relative; /* Relative positioning for custom bullet */
+    padding-left: 25px; /* Padding for list items to make space for custom bullet */
+    font-size: 16px; /* Font size for list items */
+    color: #444; /* Darker gray for better readability */
+}
+
+.member-card ul li::before {
+    content: "✔️"; /* Custom bullet character */
+    color: #ff974e; /* Custom bullet color */
+    position: absolute; /* Position absolute for bullet */
+    left: 0; /* Align left */
+    font-size: 18px; /* Size of the bullet */
+    top: 0; /* Align bullet with text */
+}
+.coming-soon {
+    font-size: 48px; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: #fd493c; /* Color for the text */
+    text-transform: uppercase; /* Uppercase letters */
+    margin: 20px 0; /* Margin for spacing */
+    animation: pulse 1.5s infinite; /* Pulse animation for emphasis */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff974e;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#services {
+    padding: 40px;
+    background-color: #ffd157;
+}
+
+#services h2 {
+    text-align: center;
+    color: #333;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    color: #ff974e;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+#about, #team, #contact {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #ff974e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#about {
+    background: linear-gradient(135deg, #ff974e 0%, #ffd157 100%);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#team {
+    background-color: #ffd157;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#team h2 {
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.member {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.member-card {
+    background-color: #ff974e;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.member p {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .member {
+        width: 100%;
+    }
+}
+
+#hero {
+    background: linear-gradient(135deg, #ff974e, #ffd157);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: #fff;
+    color: #ff974e;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff974e;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+}
+
+/* Apply padding to the body for global spacing */
+body {
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Add margin and padding to all sections */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #ff974e, #ffd157);
+    padding: 15px 20px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #fff; /* Reduced border thickness */
+}
+
+header .logo h1 {
+    font-size: 30px; /* Reduced font size */
+    color: #000000;
+
+    font-weight: bold;
+    letter-spacing: 1px; /* Reduced letter-spacing */
+    margin: 0;
+    border: 1px solid #fff; /* Reduced border thickness */
+    padding: 5px 10px; /* Reduced padding */
+    border-radius: 5px; /* Reduced border-radius */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px; /* Reduced margin */
+}
+
+nav ul li a {
+    font-size: 16px; /* Reduced font size */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px; /* Reduced padding */
+    border-radius: 5px; 
+    border: 1px solid #fff; /* Reduced border thickness */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    
+}
+.logo-image {
+    display: inline-block; /* Ensure it behaves like inline text */
+    vertical-align: middle; /* Align it with the text */
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Maintain aspect ratio */
+    margin-left: 5px; /* Space between text and image */
+}
+.logo-image img {
+    max-width: 10px; /* Set a maximum width */
+    height: 30px;
+    text-align: center; 
+    padding-bottom: 4px;
+    padding-right: 0%;/* Maintain aspect ratio */
+}
